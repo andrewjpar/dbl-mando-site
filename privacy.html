@@ -11,7 +11,7 @@
 <header>
   <p class="brand">DBL Mando</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 16 September 2026</p>
+  <p class="updated">Last updated 17 September 2026</p>
 </header>
 
 <p class="lede">DBL Mando is a disc golf scorecard. It collects as little as it can get away with, and most of the time that is nothing at all.</p>
@@ -23,6 +23,7 @@
   <li>The app can show where you are on the course map, but only if you ask it to — and your exact position never leaves your phone. Only a rounded position, about a kilometre, goes to Apple Weather for the conditions card.</li>
   <li>It never asks for your contacts, photos, camera or microphone, because it does not use them.</li>
   <li>There is no advertising, no tracking, and no third-party analytics. Nothing is sold or shared with data brokers.</li>
+  <li>If the app crashes while you are signed in, it sends a crash report — the technical details of the crash, and nothing about you or your round.</li>
   <li>You can delete your account, and everything in it, from inside the app.</li>
 </ul>
 
@@ -71,10 +72,16 @@
   <li>Advertising identifiers, or any data used for tracking across apps or websites</li>
   <li>Payment information — there is nothing to buy today, and if that ever changes, purchases go through Apple. We never see a card number.</li>
 </ul>
-<p>DBL Mando contains no advertising SDKs and no third-party analytics. It is not used to track you, in the sense Apple's App Tracking Transparency means.</p>
+<p>DBL Mando contains no advertising SDKs and no third-party analytics. Crash reports, described below, are the only diagnostics it sends, and they go to our own database. It is not used to track you, in the sense Apple's App Tracking Transparency means.</p>
 
 <h2>Course information in the app</h2>
 <p>DBL Mando ships with a list of real courses — names, towns, positions and hole counts — supplied by DiscGolfAPI, with coordinates for a handful of courses from OpenStreetMap. That list is bundled with the app and read on your phone. Browsing it, searching it, or adding a course from it sends nothing to anyone. Both sources are credited on the Courses tab.</p>
+
+<h2>Crash reports</h2>
+<p>When DBL Mando crashes, or freezes long enough that you would force-quit it, iOS records what happened. The next time you open the app — usually the following day, because that is how often iOS hands these over — the app sends that record to our database so the crash can be fixed.</p>
+<p>A crash report contains the kind of crash, the call stack (a list of the functions the app was running), the app version, your iOS version, and your device model, such as <em>iPhone16,1</em>. It contains nothing about you, your rounds, your friends, or your location. Your account id is attached so a crash that only affects one person can be answered.</p>
+<p>These reports are only sent while you are signed in. If you have never signed in, the app never sends one.</p>
+<p>The records come from MetricKit, which is part of iOS. There is no crash-reporting SDK from another company in the app, and the reports go to our own database rather than to a third party. Deleting your account detaches your account id from any crash reports it sent; the technical details are kept, because at that point they describe the app and not you.</p>
 
 <h2>Who else handles this data</h2>
 <ul>
