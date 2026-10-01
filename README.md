@@ -12,4 +12,3 @@ The same site also hosts the pages for the developer's other apps, each in its
 own folder:
 
 - `squigglezoo/` — Squiggle Zoo
-- `odo/` — Odo, a mileage log (app source: `andrewjpar/odo`)
