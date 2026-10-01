@@ -7,3 +7,9 @@ This repository deliberately contains nothing but those pages. The app source is
 private.
 
 Pages here are the source of truth. Edit them here, not in the app repository.
+
+The same site also hosts the pages for the developer's other apps, each in its
+own folder:
+
+- `squigglezoo/` — Squiggle Zoo
+- `odo/` — Odo, a mileage log (app source: `andrewjpar/odo`)
