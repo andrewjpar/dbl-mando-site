@@ -11,7 +11,7 @@
 <header>
   <p class="brand">DBL Mando</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 17 September 2026</p>
+  <p class="updated">Last updated 2 October 2026</p>
 </header>
 
 <p class="lede">DBL Mando is a disc golf scorecard. It collects as little as it can get away with, and most of the time that is nothing at all.</p>
@@ -55,15 +55,26 @@
 <h2>The lock screen</h2>
 <p>While a round is in progress the app can show it on your lock screen: the course, the hole you are on, and the scores on your card. This is drawn on your phone by the app itself. Nothing about it is uploaded, and it disappears when the round ends. You can turn Live Activities off for DBL Mando in iOS Settings.</p>
 
+<h2>Notifications</h2>
+<p>Notifications are off until you turn them on. The app only asks after you tap <strong>Turn On</strong> next to an explanation of what they are for, never when it opens, and only while you are signed in.</p>
+<ul>
+  <li>Turning them on stores <strong>the push address Apple issues for this app on this phone</strong>, linked to your account, so the app can tell you about friend requests, being put on a card, and rounds you were on finishing. That address, the version of the app that registered it, and when, is all that is stored about your phone.</li>
+  <li>It is deleted when you sign out, when you delete your account, when you turn notifications off in iOS Settings and next open the app, when Apple reports it is no longer valid, or after six months without the app being used.</li>
+  <li>A notification only ever names a friend, or somebody you have put on your own card. Anyone else is <em>Someone</em> — including somebody who has put you on theirs — and you see who after you open the app.</li>
+  <li>They never say where you are, which course, or what anyone scored.</li>
+  <li>With iOS's default previews, a locked phone shows only a title such as <em>Friend request</em>. The rest appears once the phone is unlocked.</li>
+</ul>
+<p>Notifications are delivered by Apple Push Notification service. What they say is sent to Apple to deliver, and to nobody else.</p>
+
 <h2>Your location</h2>
 <p>Location is optional, and works like this:</p>
 <ul>
-  <li>Nothing is requested until you tap the locate button on the map, or tap to show conditions on the home screen. The app does not ask on launch.</li>
+  <li>Nothing is requested until you tap the locate button on the map, or tap <em>Show conditions</em> or <em>Find courses near you</em> on the home screen. The app does not ask on launch.</li>
   <li>It asks for <strong>while using the app</strong> access only — never background or always-on.</li>
-  <li><strong>Your exact position never leaves your phone.</strong> It is used on device to centre the map and work out distances. It is not written to disk, does not sync, and is never stored in our database.</li>
+  <li><strong>Your exact position never leaves your phone.</strong> It is used on device to centre the map, work out distances, and list the courses nearest to you. It is not written to disk, does not sync, and is never stored in our database.</li>
   <li>Saying no leaves the map and the rest of the app fully usable. You can change your mind at any time in iOS Settings.</li>
 </ul>
-<p><strong>One exception, and only one: the weather card.</strong> To show current conditions on the home screen, the app sends a <em>rounded</em> position — two decimal places, about a kilometre — to Apple Weather. That is deliberately too coarse to say where you are standing, and it is enough for a forecast. Apple states that it does not associate this with your Apple Account or device, does not store it, and does not link requests together. Nothing else about you is sent with it. If you never grant location access, the weather card is simply not shown.</p>
+<p><strong>One exception, and only one: the weather card.</strong> To show current conditions on the home screen, the app sends a <em>rounded</em> position — two decimal places, about a kilometre — to Apple Weather. That is deliberately too coarse to say where you are standing, and it is enough for a forecast. Apple states that it does not associate this with your Apple Account or device, does not store it, and does not link requests together. Nothing else about you is sent with it. If you never grant location access, no position is sent: the home screen offers to show conditions instead, or says they are off and how to turn them back on.</p>
 <p>Coordinates attached to a <em>course</em> are a separate thing: they describe where that course is, not where you are, and they are set by searching for a place by name or address.</p>
 
 <h2>What is never collected</h2>
@@ -85,7 +96,7 @@
 
 <h2>Who else handles this data</h2>
 <ul>
-  <li><strong>Apple</strong> — provides Sign in with Apple, and the weather shown on the home screen. Apple's own privacy policy covers what they do with both.</li>
+  <li><strong>Apple</strong> — provides Sign in with Apple, the weather shown on the home screen, and Apple Push Notification service, which delivers notifications if you turn them on. Apple's own privacy policy covers what they do with all three.</li>
   <li><strong>Supabase</strong> — hosts the database and the sign-in service. They store the data on our behalf and do not use it for their own purposes.</li>
 </ul>
 <p>Nobody else. The data is not sold, rented, or shared with advertisers or data brokers.</p>
