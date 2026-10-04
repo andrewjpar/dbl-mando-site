@@ -12,3 +12,4 @@ The same site also hosts the pages for the developer's other apps, each in its
 own folder:
 
 - `squigglezoo/` — Squiggle Zoo
+- `holy-mackerel/` — Holy Mackerel (it uses this site's `style.css`)
